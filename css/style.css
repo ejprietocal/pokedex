@@ -1,5 +1,7 @@
 :root{
     --colorFondo: #B9B3B2;
+    --blanco: #FFFFFF;
+    --negro: #000000;
     --fuente: 'Comfortaa', sans-serif;
 }
 
@@ -14,18 +16,67 @@ html {
 *{
     text-decoration: none;
 }
+h1{
+    background: rgb(83,125,213);
+    background: radial-gradient(circle, rgba(83,125,213,1) 0%, rgba(183,184,186,1) 100%);
+    color: var(--blanco);
+    font-weight: bold;
+    font-family: var(--fuente);
+    font-size: auto;
+    text-transform: uppercase;
+    margin: none;
+}
+h2{
+    padding-left: 2rem;
+    text-align: left;
+    font-family: var(--fuente);
+    font-size: 2rem;
+    color: var(--negro);
+}
+.grid{
+    display:grid;
+}
 #content{
-    display: grid;
+
 
     width: min(90% ,192rem);
+    height: auto;
     margin: 0 auto;
     gap: 3rem;
 }
+
 .pokemon{
-    border: 1px solid black;
+    text-align: center;
+
+    border-radius: 2rem;
+    -webkit-box-shadow: 11px 30px 19px -2px rgba(0,0,0,0.29);
+    -moz-box-shadow: 11px 30px 19px -2px rgba(0,0,0,0.29);
+    box-shadow: 11px 30px 19px -2px rgba(0,0,0,0.29);
+    padding: 1px;
+    /* border: 1px solid black; */
+    max-width: 100%;
+    height: 40rem;
+
+}
+.pokemon__img{
+    /* border: 2px solid blue; */
+    border-radius: 1rem;
+
+    background-color: var(--colorFondo);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center, center;
+    background-image: linear-gradient(to top, var(--colorFondo) 0%, var(--blanco) 100%);
+    
+    max-height:80%;
+}
+div{
+    padding: 2px;
+    /* border: 1px solid black; */
     max-width: 100%;
     height: 20rem;
 }
+
 @media (min-width: 375PX){
     #content{
         grid-template-columns: repeat(1,1fr);
