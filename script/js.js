@@ -19,17 +19,19 @@ const objetos = async function (numberOfpokes){
     }
     return pokemons;
 }
-objetos(50);
+objetos(400);
 
 
-console.log(Object.keys(objetos(50)));
 
+document.getElementById('conten-flex').classList.add('animate__animated');
 document.getElementById('conten-flex').addEventListener('click',function showIn(){
     document.getElementById('conten-flex').style.setProperty('display','none');
 });
 
 function list(name,image,order,abilities,stats,nature){
     let element = document.getElementById('conten-flex');
+
+    element.classList.add('animate__bounceIn');
     element.style.setProperty('display','flex');
     let contecthtml = document.getElementById('caracteristicas').innerHTML =`
             <div class="caracteristicas__container grid">
