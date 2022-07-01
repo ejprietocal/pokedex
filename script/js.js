@@ -7,7 +7,7 @@ const objetos = async function (numberOfpokes){
             pokemons[i-1]= json;
             let parragraf = document.getElementById('content');
             parragraf.innerHTML += ` 
-                <div class="pokemon">
+                <div class="pokemon hvr-grow">
                     <h1 class="pokemon__nombre">${json.name}</h1>
                     <div class="pokemon__img" style="background-image:url('${json.sprites.front_default}')" 
                     onclick="list('${json.name}','${json.sprites.front_default}','${json.order}','${json.abilities}','${json.stats}','${json.types[0].type.name}')" ></div>
@@ -34,7 +34,7 @@ function list(name,image,order,abilities,stats,nature){
     element.classList.add('animate__bounceIn');
     element.style.setProperty('display','flex');
     let contecthtml = document.getElementById('caracteristicas').innerHTML =`
-            <div class="caracteristicas__container grid">
+            <div class="caracteristicas__container grid hvr-glow">
             <div class="pokemon pokemon--caracteristicas">
                 <h1 class="pokemon__nombre">${name}</h1>
                 <div class="pokemon__img" style="background-image:url('${image}')">
