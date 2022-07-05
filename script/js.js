@@ -23,7 +23,7 @@ function downloadData(numberOfpokes){
     return pokemons;
 }
 
-const pokes = downloadData(50);
+const pokes = downloadData(400);
 console.log(pokes);
 
 
