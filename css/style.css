@@ -67,6 +67,12 @@ h2{
     margin: 0 auto;
     gap: 3rem;
 }
+.logo{
+    background-image: url('../img/pokemon.png');
+    background-repeat: no-repeat;
+
+    background-position: center center;
+}
 
 .pokemon{
     text-align: center;
