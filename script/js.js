@@ -11,7 +11,7 @@ function downloadData(numberOfpokes){
             parragraf.innerHTML += ` 
                 <div class="pokemon hvr-grow">
                     <h1 class="pokemon__nombre">${json.name}</h1>
-                    // <div class="pokemon__img" style="background-image:url('${json.sprites.front_default}')" 
+                    <div class="pokemon__img" style="background-image:url('${json.sprites.front_default}')" 
                     onclick="list('${json.name}','${json.sprites.front_default}','${json.order}','${json.abilities[0].ability.name}','${json.stats}','${json.types[0].type.name}')" ></div>
                     <h2 class="pokemon__numero">N#: ${json.order}</h2>
                     <div class="pokemon__descripcion grid">

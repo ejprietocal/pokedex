@@ -1,8 +1,9 @@
 :root{
-    --colorFondo: #D6D6D6;
+    --colorFondo: #57606F;
     --blanco: #FFFFFF;
     --negro: #000000;
     --fuente: 'Comfortaa', sans-serif;
+
 }
 
 
@@ -95,7 +96,7 @@ h2{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center, center;
-    background-image: linear-gradient(to top, var(--colorFondo) 0%, var(--blanco) 100%);
+    background-image: linear-gradient(315deg, #bdcad9 0%, #e1dada 74%);
     
     max-height:100%;
 }
